@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>How Many Capitals</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="splashscreen" class="splashScreen">
+            
+            <h1 id="welcome">Welcome to How Many Capitals</h1>
+            
+            <h2 id="find">Find the most capitals in a row</h2>
+            
+            <p id="beware">You have 3 Bonuses, BEWARE : <em>every time you fail your streak ends</em></p>
+            <p class="diff" id="diff">difficulty :</p>
+            <input type="range" min="1" max="3" class="niveau" id="niveau">
+            <button href="#" class="enter_link">Start Playing</button>
+            <p class="credits">© 2022 hugorince, videos by Vedovo</p>
+            <video src="introBg.mp4" id="bg-video" autoplay muted loop></video>
+        </div>
+        
+        <div class="flexContainer d-flex flex-column justify-content-center w-100 h-100">
+            <button class="fifty bonus" id="fifty">50/50</button>
+            <button class="shuffle bonus" id="prop">shuffle</button>
+            <button class="skip bonus" id="skip">skip</button>
+            <p id="highscore">🏆 Highscore is :</p>
+            <p id="score"></p>
+            <h2 id="countryToGuess"></h2>
+            
+            <div class="buttonsContainer">
+                <div class="upperButtons">
+                    <button class="btn" id="btn1"></button>
+                    <button class="btn" id="btn2"></button>
+                    <button class="btn" id="btn5"></button>
+                    <button class="btn" id="btn6"></button>
+                </div>
+                <div class="lowerButtons">
+                    <button class="btn" id="btn3"></button>
+                    <button class="btn" id="btn4"></button>
+                    <button class="btn" id="btn7"></button>
+                    <button class="btn" id="btn8"></button>
+                </div>
+            </div>
+            
+            <button id="continuePlay" class="continueAnim">Guess</button>
+            <p class="credits">© 2022 hugorince, videos by Vedovo</p>
+            <video src="mainBg.mp4" id="bg-video2" autoplay muted loop></video>
+        </div>
+       
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
