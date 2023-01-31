@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,700;1,900&display=swap');
 
 html, body{
-    height: 100%;
+    height: 100vh;
 }
 
 body{
-    height: 100%;
+    height: 100vh;
     font-family: 'Merriweather', serif;
     margin: 0;
 }
@@ -30,32 +30,34 @@ body{
 }
 
 #bg-video{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     z-index: -9999;
 }
 
 #welcome{
     position: absolute;
-    margin-top: -15rem;
-    font-size: 4rem;
+    margin-top: -15%;
+    font-size: 3rem;
     filter: drop-shadow(1px 1px 4px grey);
     animation: opacityReveal 2s;
 
 }
 
 .enter_link{
-    margin-top: 15rem;
+    margin-top: 20%;
     position: absolute;
     font-family: 'Merriweather', serif;
-    width: 10rem;
-    height: 2.5rem;
+    width: 10%;
+    min-width : 100px;
+    height: 5%;
+    min-height : 33px;
     font-weight: 500;
     transform: scale(1.02);
     transition: all .2s ease-in-out;
     border-style: none;
-    border-radius: .2rem;
+    border-radius: 4px;
     animation: opacityReveal 6s;
 }
 
@@ -69,7 +71,7 @@ body{
 }
 
 #find{
-    margin-bottom: 8rem;
+    margin-bottom: 8%;
     position: absolute;
     font-size: 2rem;
     animation: opacityReveal 4s;
@@ -77,26 +79,25 @@ body{
 
 #beware{
     position: absolute;
-    margin-bottom: 2rem;
+    margin-bottom: 2%;
     animation: opacityReveal 6s;
 }
 
 .niveau{
     position: absolute;
-    margin-bottom: -9rem;
+    margin-bottom: -10%;
 }
 
 .diff{
     position: absolute;
-    margin-bottom: -5rem;
+    margin-bottom: -5%;
     animation: opacityReveal 6s;
 }
 
 /* Main Game */
 
-
 .flexContainer{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -105,10 +106,6 @@ body{
     padding: 0;
     margin: 0;
     position: relative;
-}
-
-.flexContainer > div{
-    margin: 0.5rem;
 }
 
 #countryToGuess{
@@ -125,23 +122,21 @@ body{
     color: white;
     font-size:1.5rem;
     transition: all .2s ease-in-out;
-    margin-top: -1rem;
-    margin-top: -25rem;
+    margin-top: -25%;
 }
 
 #highscore{
-    margin-top: -30rem;
+    margin-top: -33%;
     position: absolute;
     font-weight:700;
     color: white;
-    font-size:1rem;
     transition: all .2s ease-in-out;
     filter: drop-shadow(1px 1px 1px gold);
 }
 
 #countryToGuess{
     position: absolute;
-    margin-top: -15rem;
+    margin-top: -15%;
 }
 
 
@@ -154,36 +149,36 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 5%;
 }
-
-.buttonsContainer > div {
-    margin: .3rem;
-}
-
 
 .lowerButtons > button {
-    margin: .5rem
+    margin: 1vh;
+    border-radius: 4px;
+    border-style: none;
 }
 
 .upperButtons > button {
-    margin: .5rem
+    margin: 1vh;
+    border-radius: 4px;
+    border-style: none;
 }
 
 .btn{
     font-family: 'Merriweather', serif;
-    width : 12rem;
-    height : 3rem;
-    border-radius: .2rem;
-    border-style: none;
+    width : 14vw;
+    min-width : 100px;
+    height : 6vh;
+    min-height : 33px;
     filter: drop-shadow(1px 1px 4px grey);
 }
 
 .btn2{
     font-family: 'Merriweather', serif;
-    width : 12rem;
-    height : 3rem;
-    border-radius: .2rem;
-    border-style: none;
+    width : 14vw;
+    min-width : 100px;
+    height : 6vh;
+    min-height : 33px;
     filter: drop-shadow(1px 1px 4px grey);
 }
 
@@ -196,26 +191,26 @@ body{
 
 .btnWin{
     font-family: 'Merriweather', serif;
-    width : 12rem;
-    height : 3rem;
+    width : 14vw;
+    min-width : 100px;
+    height : 6vh;
+    min-height : 33px;
     font-weight: 900;
     background-color: #9EFF01;
     transition: all .2s ease-in-out;
-    border-radius: .2rem;
-    border-style: none;
     transform: scale(1.02);
     filter: drop-shadow(1px 1px 4px grey);
 }
 
 .btnLose{
     font-family: 'Merriweather', serif;
-    width : 12rem;
-    height : 3rem;
+    width : 14vw;
+    min-width : 100px;
+    height : 6vh;
+    min-height : 33px;
     font-weight: 900;
     background-color: #EB604D;
     transition: all .2s ease-in-out;
-    border-radius: .2rem;
-    border-style: none;
     transform: scale(1.02);
     filter: drop-shadow(1px 1px 4px grey);
 }
@@ -223,30 +218,18 @@ body{
 
 /* Button Continue or Stop  */
 
-.continue{
-    margin-top: 15rem;
-    position: absolute;
-    font-family: 'Merriweather', serif;
-    width: 8rem;
-    height: 2.5rem;
-    font-weight: 900;
-    transform: scale(1.05);
-    transition: all .2s ease-in-out;
-    border-style: none;
-    border-radius: .2rem;
-    filter: drop-shadow(1px 1px 4px grey);
-}
-
 .continueAnim{
-    margin-top: 15rem;
+    margin-top: 25%;
     position: absolute;
     font-family: 'Merriweather', serif;
-    width: 8rem;
-    height: 2.5rem;
+    width : 10vw;
+    min-width : 100px;
+    height : 6vh;
+    min-height : 33px;
     font-weight: 900;
     transition: all .2s ease-in-out;
     border-style: none;
-    border-radius: .2rem;
+    border-radius: 4px;
     filter: drop-shadow(1px 1px 4px grey);
     animation: scaleUpDown 3s infinite;
 }
@@ -257,15 +240,17 @@ body{
 }
 
 .playAgain{
-    margin-top: 15rem;
+    margin-top: 25%;
     position: absolute;
     font-family: 'Merriweather', serif;
-    width: 8rem;
-    height: 2.5rem;
+    width : 10vw;
+    min-width : 100px;
+    height : 6vh;
+    min-height : 33px;
     font-weight: 900;
     transition: all .2s ease-in-out;
     border-style: none;
-    border-radius: .2rem;
+    border-radius: 4px;
     filter: drop-shadow(1px 1px 4px grey);
     animation: scaleUpDown 3s infinite;
 }
@@ -275,20 +260,10 @@ body{
    background-color: beige;
 }
 
-.continue:hover{
-    margin-top: 15rem;
-    position: absolute;
-    font-weight: 900;
-    transform: scale(1.02);
-    transition: all .2s ease-in-out;
-    background-color: beige;
-}
-
-
 .credits{
     position: absolute;
-    bottom:0;
-    right: 1rem;
+    bottom:1vh;
+    right: 1vw;
     color: white;
     opacity: 0.5;
     font-size: 0.7rem;
@@ -304,26 +279,24 @@ body{
 
 /* Bonus */
 
-
 .fifty{
-    top: 3rem;
-    right: 12rem;
+    top: 3vh;
+    right: 12vw;
 }
 
 .shuffle{
-    top: 3rem;
-    right: 7rem;
+    top: 3vh;
+    right: 7vw;
 }
 
 .skip {
-    top: 3rem;
-    right: 3rem;
-    
+    top: 3vh;
+    right: 3vw;
 }
 
 .bonus {
     font-family:Arial, Helvetica, sans-serif;
-    height: 2.5rem;
+    height: 5vh;
     border-radius: 100%;
     border-color: gold;
     background-color: beige;
@@ -333,14 +306,12 @@ body{
 
 .bonus:hover {
     scale: 1.1;
-    height: 2.5rem;
-    border-radius: 100%;
     border-color: #EB604D;
-    background-color: beige;
+    background-color: orange;
     transition: all .2s ease-in-out;
     font-weight: 900;
+    filter: drop-shadow(1px 1px 2px red);
 }
-
 
 /* Animations */
 
