@@ -12,6 +12,8 @@ body{
 
 /* Splash Screen */
 
+
+
 #splashscreen{
     z-index: 2;
     height: 100%;
@@ -114,6 +116,8 @@ body{
     font-size:2.5rem;
     filter: drop-shadow(1px 1px 4px grey);
     transition: all .2s ease-in-out;
+    position: absolute;
+    margin-top: -15%;
 }
 
 #score{
@@ -133,12 +137,6 @@ body{
     transition: all .2s ease-in-out;
     filter: drop-shadow(1px 1px 1px gold);
 }
-
-#countryToGuess{
-    position: absolute;
-    margin-top: -15%;
-}
-
 
 /* Buttons cities */
 
@@ -313,6 +311,7 @@ body{
     filter: drop-shadow(1px 1px 2px red);
 }
 
+
 /* Animations */
 
 @keyframes opacityReveal { 
@@ -338,3 +337,81 @@ body{
       scale: 1;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    #welcome {
+      margin-bottom: 90%;
+      text-align: center;
+      font-size: 2rem;
+    }
+    #find{
+        margin-bottom: 50%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    #beware{
+        margin-bottom: 15%;
+        text-align: center;
+    }
+    
+    .niveau{
+        position: absolute;
+        margin-bottom: -40%;
+    }
+    
+    .diff{
+        position: absolute;
+        margin-bottom: -25%;
+    }
+    .enter_link{
+        margin-top: 90%; 
+    }
+    .fifty{
+        top: 3vh;
+        right: 33vw;
+    }
+    
+    .shuffle{
+        top: 3vh;
+        right: 17vw;
+    }
+    
+    .skip {
+        top: 3vh;
+        right: 3vw;
+    }
+    #countryToGuess{
+        font-size:2rem;
+        margin-bottom: 55%;
+        text-align: center;
+    }
+    
+    #score{
+        margin-bottom: 85%;
+    }
+    
+    #highscore{
+        margin-bottom: 99%;
+    }
+    .btn{
+        min-width : 70px;
+    }
+    .btn2{
+        min-width : 70px;
+    }
+    .btnLose{
+        min-width : 70px;
+    }
+    .btnWin{
+        min-width : 70px;
+    }
+    .continueAnim{
+        margin-top: 80%;
+        min-width : 100px;
+    }
+
+    .playAgain{
+        margin-top: 80%;
+        min-width : 100px;
+    }
+  }
